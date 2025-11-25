@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/vulnscope_logo_dark.png" width="320">
+  <img src="vulnscope_logo_dark.png" width="320">
 </p>
 
 <h1 align="center">VulnScope</h1>
@@ -12,7 +12,7 @@ An advanced local vulnerability scanner with CVE lookup, severity scoring, PDF r
   <img src="https://img.shields.io/badge/Python-3.12-blue.svg">
   <img src="https://img.shields.io/badge/Nmap-Integrated-orange.svg">
   <img src="https://img.shields.io/badge/Report-PDF-green.svg">
-  <img src="https://img.shields.io/badge/CVEs-NVD Database-critical.svg">
+  <img src="https://img.shields.io/badge/CVEs-NVD%20Database-critical.svg">
   <img src="https://img.shields.io/badge/UI-Streamlit-red.svg">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
 </p>
@@ -21,71 +21,75 @@ An advanced local vulnerability scanner with CVE lookup, severity scoring, PDF r
 
 # 🚀 Overview
 
-**VulnScope** is a complete cybersecurity toolkit designed to scan local networks, detect vulnerable services, match CVEs using NVD data, visualize findings through a Streamlit dashboard, and generate professional PDF reports.
+**VulnScope** is a powerful local-network vulnerability scanner built for cybersecurity learning, ethical hacking, and network assessment.  
+It uses **Nmap**, a custom rules engine, and **offline CVE lookup** to identify weak services and outdated software with precision.
 
-This project is ideal for:
+It includes:
 
-- Cybersecurity beginners  
-- Portfolio building  
-- Ethical hacking practice  
-- Local network assessments  
-- Vulnerability learning  
+- Real-time scanning  
+- Severity scoring  
+- CVE analysis  
+- PDF reporting  
+- Interactive Streamlit dashboard  
+
+Perfect for:
+- Portfolio projects  
+- Learning cybersecurity  
+- Practical network testing  
+- Academic submissions  
 
 ---
 
 # 🧰 Features
 
-### 🔍 **1. Port & Service Scanning (Nmap)**
+### 🔍 Port & Service Scanning (Nmap)
 Detects:
 - Open ports  
 - Service names  
-- Software versions  
+- Version fingerprints  
 
-### ⚠️ **2. Rule-Based Vulnerability Detection**
-Custom rules define:
+### ⚠️ Rule-Based Vulnerability Detection
+Identifies common high-risk services:
+- Telnet  
+- SMB  
+- FTP  
+- MySQL  
+- Apache  
+- And more…
+
+Includes:
 - Critical  
 - High  
 - Medium  
-- Low vulnerabilities  
+- Low severity scoring  
 
-Example risky services:
-- Telnet  
-- FTP  
-- SMB  
-- MySQL  
-- Apache  
+### 🛡 CVE Lookup (Fast, Offline)
+Matches detected service versions with CVEs from NVD.
 
-### 🛡 **3. CVE Lookup (Offline, Fast)**
-Matches detected service versions against NVD (National Vulnerability Database).
-
-Provides:
-- CVE ID  
-- Severity  
-- CVSS Score  
+Each CVE shows:
+- ID  
 - Description  
+- Severity  
+- CVSS score  
 
-### 📊 **4. Streamlit Dashboard**
-Interactive UI with:
-- Host table  
-- Ports  
-- Alerts  
-- CVEs  
-- Severity bars  
-- Download CSV buttons  
-- Generate PDF report  
-
-### 📄 **5. Professional PDF Report**
+### 📊 Streamlit Dashboard
 Includes:
+- Host overview table  
+- Alerts & vulnerabilities  
+- CVE table  
+- Severity charts  
+- Export buttons  
+- Run scan button  
+
+### 📄 Professional PDF Report
+Contains:
 - Cover page  
 - Severity summary  
-- Colored severity bars  
-- CVE summary page  
-- Detailed host pages  
-- Recommendations  
+- Color severity bars  
+- CVE summary  
+- Per-host analysis  
 
 ---
 
 # 📁 Project Structure
-
-
 
