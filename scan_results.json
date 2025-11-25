@@ -1,0 +1,114 @@
+{
+  "scanned_at": "2025-11-25T07:16:34.270910Z",
+  "target": "192.168.1.0/24",
+  "hosts": [
+    {
+      "ip": "192.168.1.1",
+      "state": "up",
+      "ports": [
+        {
+          "port": 22,
+          "state": "filtered",
+          "service": "ssh",
+          "version": ""
+        },
+        {
+          "port": 23,
+          "state": "filtered",
+          "service": "telnet",
+          "version": ""
+        },
+        {
+          "port": 53,
+          "state": "open",
+          "service": "domain",
+          "version": "2.84rc2"
+        },
+        {
+          "port": 80,
+          "state": "open",
+          "service": "http",
+          "version": "1.30 26Oct2018"
+        },
+        {
+          "port": 443,
+          "state": "open",
+          "service": "https",
+          "version": ""
+        }
+      ],
+      "alerts": [
+        {
+          "message": "Telnet detected. Unencrypted access.",
+          "severity": "critical",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "ip": "192.168.1.2",
+      "state": "up",
+      "ports": [
+        {
+          "port": 135,
+          "state": "open",
+          "service": "msrpc",
+          "version": ""
+        },
+        {
+          "port": 139,
+          "state": "open",
+          "service": "netbios-ssn",
+          "version": ""
+        },
+        {
+          "port": 445,
+          "state": "open",
+          "service": "microsoft-ds",
+          "version": ""
+        },
+        {
+          "port": 3306,
+          "state": "open",
+          "service": "mysql",
+          "version": ""
+        },
+        {
+          "port": 5432,
+          "state": "open",
+          "service": "postgresql",
+          "version": ""
+        },
+        {
+          "port": 16992,
+          "state": "open",
+          "service": "http",
+          "version": "14.1.70.2228"
+        }
+      ],
+      "alerts": [
+        {
+          "message": "SMB may expose SMBv1 vulnerability.",
+          "severity": "high",
+          "score": 8
+        },
+        {
+          "message": "MySQL exposed to the network.",
+          "severity": "medium",
+          "score": 5
+        },
+        {
+          "message": "PostgreSQL exposed. Use IP restrictions and strong passwords.",
+          "severity": "medium",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "ip": "192.168.1.3",
+      "state": "up",
+      "ports": [],
+      "alerts": []
+    }
+  ]
+}

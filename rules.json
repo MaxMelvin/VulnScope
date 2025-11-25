@@ -1,0 +1,41 @@
+[
+  {
+    "port": 23,
+    "service": "telnet",
+    "message": "Telnet detected. Unencrypted access.",
+    "severity": "critical",
+    "score": 10
+  },
+  {
+    "port": 21,
+    "service": "ftp",
+    "message": "FTP service open. Possible anonymous login.",
+    "severity": "high",
+    "score": 7
+  },
+  {
+    "port": 445,
+    "service": "smb",
+    "message": "SMB may expose SMBv1 vulnerability.",
+    "severity": "high",
+    "score": 8
+  },
+  {
+    "service": "mysql",
+    "message": "MySQL exposed to the network.",
+    "severity": "medium",
+    "score": 5
+  },
+  {
+    "service": "postgresql",
+    "message": "PostgreSQL exposed. Use IP restrictions and strong passwords.",
+    "severity": "medium",
+    "score": 5
+  },
+  {
+    "service": "apache",
+    "message": "Apache detected. Check for outdated version.",
+    "severity": "low",
+    "score": 3
+  }
+]

@@ -1,0 +1,6 @@
+streamlit>=1.24
+pandas
+fpdf
+python-nmap
+rapidfuzz
+matplotlib
