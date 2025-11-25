@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/vulnscope_logo_dark.png" width="320">
+  <img src="vulnscope_logo_dark.png" width="320">
 </p>
 
 <h1 align="center">VulnScope</h1>
@@ -86,4 +86,5 @@ Includes:
 ---
 
 # 📁 Project Structure
+
 
